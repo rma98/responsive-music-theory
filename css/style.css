@@ -1,0 +1,400 @@
+/* Estilos base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px; /* Aumente o tamanho da fonte, se necessário */
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: color 0.3s;
+  padding: 10px; /* Adicione um preenchimento */
+  border-radius: 5px; /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve para destaque */
+}
+
+.toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Destaque ao passar o mouse */
+}
+
+.toggle-button .fa-sun {
+  display: inline; /* Mantenha o ícone do sol visível por padrão */
+}
+
+.toggle-button .fa-moon {
+  display: none; /* Oculte o ícone da lua por padrão */
+}
+
+.dark-mode .toggle-button .fa-sun {
+  display: none; /* Oculte o ícone do sol no modo escuro */
+}
+
+.dark-mode .toggle-button .fa-moon {
+  display: inline; /* Exiba o ícone da lua no modo escuro */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* Estilo da barra lateral fixa */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-image: url('caminho/para/imagem-de-fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  position: absolute; /* Tornando a sidebar fixa */
+  top: 10px; /* Espaço entre o topo da página e a barra lateral */
+  height: calc(100vh - 585px); /* Altura da sidebar com base na altura da janela, mantendo margem */
+  overflow-y: auto; /* Adicionando scroll interno para quando o conteúdo for maior que a barra lateral */
+  max-width: 300px; /* Limita a largura da barra lateral */
+}
+
+/* Estilo para o título */
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #3f51b5;
+}
+
+/* Estilo do select */
+.styled-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB...'); /* Ícone customizado */
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo do checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.styled-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Modo escuro */
+.dark-mode .sidebar {
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #e0e0e0;
+}
+
+.dark-mode .styled-select {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.dark-mode .styled-checkbox {
+  background-color: #444;
+  border: 1px solid #555;
+}
+
+article {
+  flex: 2;
+  padding: 20px;
+}
+
+footer {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Estilos para modo escuro */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .sidebar {
+  background-color: #2c2c2c;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .toggle-button {
+  color: #e0e0e0;
+}
+
+/* Estilos para os acordes */
+.acordes-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.acordes-container > div {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+
+.acordes-maiores {
+  background-color: #e3f2fd;
+}
+
+.acordes-menores {
+  background-color: #ffcdd2;
+}
+
+.acorde-diminuto {
+  background-color: #f0f4c3;
+  flex: 2;
+}
+
+/* Estilos para a exibição do campo harmônico */
+#campoHarmonico {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.acordes-maiores, .acordes-menores, .acorde-diminuto {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.acordes-maiores {
+  background-color: #e3f2fd;
+}
+
+.acordes-menores {
+  background-color: #ffcdd2;
+}
+
+.acorde-diminuto {
+  background-color: #f0f4c3;
+  flex: 2;
+}
+
+.acordes-maiores ul, .acordes-menores ul, .acorde-diminuto ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.acordes-maiores h3, .acordes-menores h3, .acorde-diminuto h3 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para escalas */
+.escala-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.escala-maior {
+  background-color: #bbdefb; /* Azul claro para escala maior */
+}
+
+.escala-menor {
+  background-color: #ffccbc; /* Laranja claro para escala menor */
+}
+
+.escala-pentatonica {
+  background-color: #dcedc8; /* Verde claro para escala pentatônica */
+}
+
+.escala h3 {
+  margin-bottom: 10px;
+}
+
+.escala ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Estilo específico para a exibição das escalas */
+#campoHarmonico.escala {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Estilos para a seção de Perguntas Frequentes (FAQ) */
+#faq {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Cor de fundo neutra */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd; /* Borda leve para separar as perguntas */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.faq-item h3 {
+  margin: 0;
+  cursor: pointer; /* Indica que pode ser clicável (se desejar adicionar interatividade) */
+}
+
+.faq-item p {
+  margin-top: 10px;
+}
+
+/* Efeito hover para as perguntas */
+.faq-item:hover {
+  background-color: #f0f0f0; /* Destaque ao passar o mouse */
+}
+
+/* Estilos para modo escuro */
+.dark-mode #faq {
+  background-color: #2c2c2c; /* Fundo escuro para modo escuro */
+}
+
+.dark-mode .faq-item {
+  border: 1px solid #444; /* Borda mais escura no modo escuro */
+  color: #e0e0e0; /* Texto claro no modo escuro */
+}
+
+.dark-mode .faq-item:hover {
+  background-color: #3c3c3c; /* Destaque ao passar o mouse no modo escuro */
+}
+
+/* Estilos para modo escuro das três primeiras seções */
+
+/* Modo escuro para a seção de acordes */
+.dark-mode .acordes-container > div {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra mais suave no modo escuro */
+}
+
+.dark-mode .acordes-maiores {
+  background-color: #3a3f51;
+}
+
+.dark-mode .acordes-menores {
+  background-color: #4a3f4f;
+}
+
+.dark-mode .acorde-diminuto {
+  background-color: #5f5f4f;
+}
+
+/* Modo escuro para o campo harmônico */
+.dark-mode #campoHarmonico {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .acordes-maiores,
+.dark-mode .acordes-menores,
+.dark-mode .acorde-diminuto {
+  color: #e0e0e0;
+  background-color: #3a3a3a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .acordes-maiores h3, 
+.dark-mode .acordes-menores h3, 
+.dark-mode .acorde-diminuto h3 {
+  color: #ffffff;
+}
+
+/* Modo escuro para a seção de escalas */
+.dark-mode .escala-container {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .escala-maior {
+  background-color: #3a4f5c; /* Azul mais escuro para escala maior */
+}
+
+.dark-mode .escala-menor {
+  background-color: #5c4740; /* Laranja escuro para escala menor */
+}
+
+.dark-mode .escala-pentatonica {
+  background-color: #4b6145; /* Verde escuro para escala pentatônica */
+}
+
+.dark-mode .escala h3 {
+  color: #ffffff;
+}
+
+.dark-mode .escala ul {
+  color: #e0e0e0;
+}

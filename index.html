@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Campo Harmônico Interativo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/29dd473d90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Campo Harmônico Interativo</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#cadencias">Cadências</a></li>
+        <li><a href="#harmonicos">Campo Harmônico</a></li>
+        <li><a href="#explicacoes">Explicações</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <button id="toggleMode" class="toggle-button">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon hidden"></i>
+    </button>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h2>Configurações Musicais</h2>
+      <p>Selecione o tom para visualizar o campo harmônico correspondente:</p>
+      <select id="tonalidadeSelect" class="styled-select">
+        <option value="C">C (Dó)</option>
+        <option value="D">D (Ré)</option>
+        <option value="E">E (Mi)</option>
+        <option value="F">F (Fá)</option>
+        <option value="G">G (Sol)</option>
+        <option value="A">A (Lá)</option>
+        <option value="B">B (Si)</option>
+      </select>
+    
+      <div class="checkbox-container">
+        <label for="toggleView">Visão Sequencial:</label>
+        <input type="checkbox" id="toggleView" class="styled-checkbox">
+      </div>
+    
+      <h2>Seleção de Escalas</h2>
+      <p>Escolha uma escala para explorar:</p>
+      <select id="escalaSelect" class="styled-select">
+        <option value="maior">Escala Maior</option>
+        <option value="menor">Escala Menor</option>
+        <option value="pentatonica">Escala Pentatônica</option>
+      </select>
+    </aside>
+    
+    <article>
+      <!-- Seção do Campo Harmônico -->
+      <section id="harmonicos">
+        <h2>Campo Harmônico</h2>
+        <div id="campoHarmonico">
+          <!-- Tabela será carregada dinamicamente aqui -->
+        </div>
+      </section>
+  
+      <!-- Seção de Cadências e Funções Harmônicas -->
+      <section id="cadencias">
+        <h2>Cadências e Funções Harmônicas</h2>
+        <div class="acordes-container">
+          <div class="acordes-maiores">
+            <h3>Acordes Maiores</h3>
+            <ul>
+              <li><strong>1-4-5:</strong> Tônica, Subdominante, Dominante</li>
+            </ul>
+          </div>
+          <div class="acordes-menores">
+            <h3>Acordes Menores</h3>
+            <ul>
+              <li><strong>2-3-6:</strong> Acordes menores dentro da progressão</li>
+            </ul>
+          </div>
+          <div class="acorde-diminuto">
+            <h3>Acorde Diminuto</h3>
+            <ul>
+              <li><strong>7:</strong> Acorde diminuto, com função de transição</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Seção de Explicações sobre os Graus -->
+      <section id="explicacoes">
+        <h2>Explicações sobre os Graus</h2>
+        <div class="acordes-container">
+          <div class="acordes-maiores">
+            <h3>Acordes Maiores</h3>
+            <ul>
+              <li><strong>1º Grau - Tônica:</strong> Ponto de resolução e descanso.</li>
+              <li><strong>4º Grau - Subdominante:</strong> Prepara a resolução.</li>
+              <li><strong>5º Grau - Dominante:</strong> Gera tensão para resolver na Tônica.</li>
+            </ul>
+          </div>
+          <div class="acordes-menores">
+            <h3>Acordes Menores</h3>
+            <ul>
+              <li><strong>2º Grau - Subdominante menor:</strong> Transição suave para a Dominante.</li>
+              <li><strong>3º Grau - Mediante:</strong> Um acorde menor, com função intermediária.</li>
+              <li><strong>6º Grau - Tônica menor relativa:</strong> Pode ser usado para mudar o modo para menor.</li>
+            </ul>
+          </div>
+          <div class="acorde-diminuto">
+            <h3>Acorde Diminuto</h3>
+            <ul>
+              <li><strong>7º Grau - Subtônica diminuta:</strong> Tensão extrema, pedindo resolução imediata.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Seção de Perguntas Frequentes (FAQ) -->
+<section id="faq">
+  <h2>Perguntas Frequentes (FAQ)</h2>
+  <div class="faq-item">
+    <h3>O que é um Campo Harmônico?</h3>
+    <p>O Campo Harmônico é um conjunto de acordes formados a partir de uma escala musical. Ele segue uma ordem específica de intervalos, proporcionando uma base harmônica coerente.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Como posso usar o Campo Harmônico para compor músicas?</h3>
+    <p>Utilizando os acordes do Campo Harmônico, você pode criar progressões harmônicas que fazem sentido dentro de uma tonalidade, gerando músicas harmoniosas e coesas.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Qual a diferença entre acordes maiores e menores?</h3>
+    <p>Acordes maiores são geralmente associados a sonoridades mais alegres e brilhantes, enquanto acordes menores tendem a evocar emoções mais melancólicas ou introspectivas.</p>
+  </div>
+</section>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Campo Harmônico Interativo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

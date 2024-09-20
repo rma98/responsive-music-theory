@@ -1,0 +1,94 @@
+/* Estilos para dispositivos móveis com resolução máxima de 430px */
+@media (max-width: 430px) {
+  
+    /* Ajustes no corpo da página */
+    body {
+      font-size: 14px; /* Reduz o tamanho da fonte para melhor legibilidade */
+    }
+  
+    /* Ajustes no header */
+    header {
+      padding: 15px;
+    }
+  
+    .toggle-button {
+      font-size: 20px; /* Diminui o tamanho do botão de alternância de tema */
+      top: 15px;
+      right: 15px;
+      padding: 8px; /* Reduz o padding para manter o layout limpo */
+    }
+  
+    /* Ajustes no menu de navegação */
+    .navbar ul {
+      flex-direction: column; /* Torna o menu vertical */
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0; /* Aumenta o espaçamento entre os itens do menu */
+    }
+  
+    .navbar ul li a {
+      font-size: 16px; /* Ajusta o tamanho da fonte dos links */
+    }
+  
+    /* Ajustes na sidebar */
+    .sidebar {
+      position: relative; /* Remove a posição fixa para garantir melhor adaptabilidade em telas menores */
+      width: 100%; /* A sidebar agora ocupa toda a largura */
+      height: auto; /* A altura é ajustada automaticamente */
+      margin-bottom: 20px; /* Espaçamento abaixo da sidebar */
+      padding: 10px; /* Reduz o padding para telas menores */
+    }
+  
+    /* Ajustes no conteúdo principal */
+    main {
+      flex-direction: column; /* O conteúdo principal será empilhado verticalmente */
+      margin: 10px; /* Reduz as margens laterais */
+    }
+  
+    /* Ajustes no container de acordes */
+    .acordes-container {
+      flex-direction: column; /* Acordes em blocos verticais */
+    }
+  
+    .acordes-container > div {
+      margin-bottom: 10px; /* Espaçamento entre os blocos de acordes */
+      padding: 15px; /* Reduz o padding */
+    }
+  
+    /* Ajustes no campo harmônico */
+    #campoHarmonico {
+      flex-direction: column; /* Torna a exibição do campo harmônico vertical */
+    }
+  
+    .acordes-maiores, .acordes-menores, .acorde-diminuto {
+      margin-bottom: 15px; /* Espaçamento entre os elementos */
+      padding: 15px; /* Reduz o padding */
+    }
+  
+    /* Ajustes na exibição das escalas */
+    .escala-container {
+      padding: 15px; /* Reduz o padding */
+    }
+  
+    .escala h3 {
+      font-size: 18px; /* Ajusta o tamanho da fonte dos títulos */
+    }
+  
+    /* Ajustes no FAQ */
+    #faq {
+      padding: 15px;
+    }
+  
+    .faq-item {
+      padding: 10px;
+    }
+  
+    /* Ajustes no footer */
+    footer {
+      padding: 15px;
+    }
+  }
+  
