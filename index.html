@@ -25,6 +25,12 @@
       <i class="fas fa-sun"></i>
       <i class="fas fa-moon hidden"></i>
     </button>
+    
+    <!-- Barra de pesquisa -->
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Buscar música..." aria-label="Buscar música">
+      <button onclick="searchSong()"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+    </div>
   </header>
 
   <main>
@@ -119,22 +125,64 @@
       </section>
   
       <!-- Seção de Perguntas Frequentes (FAQ) -->
-<section id="faq">
-  <h2>Perguntas Frequentes (FAQ)</h2>
-  <div class="faq-item">
-    <h3>O que é um Campo Harmônico?</h3>
-    <p>O Campo Harmônico é um conjunto de acordes formados a partir de uma escala musical. Ele segue uma ordem específica de intervalos, proporcionando uma base harmônica coerente.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Como posso usar o Campo Harmônico para compor músicas?</h3>
-    <p>Utilizando os acordes do Campo Harmônico, você pode criar progressões harmônicas que fazem sentido dentro de uma tonalidade, gerando músicas harmoniosas e coesas.</p>
-  </div>
-  <div class="faq-item">
-    <h3>Qual a diferença entre acordes maiores e menores?</h3>
-    <p>Acordes maiores são geralmente associados a sonoridades mais alegres e brilhantes, enquanto acordes menores tendem a evocar emoções mais melancólicas ou introspectivas.</p>
-  </div>
-</section>
+      <section id="faq">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <div class="faq-item">
+          <h3>O que é um Campo Harmônico?</h3>
+          <p>O Campo Harmônico é um conjunto de acordes formados a partir de uma escala musical. Ele segue uma ordem específica de intervalos, proporcionando uma base harmônica coerente.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Como posso usar o Campo Harmônico para compor músicas?</h3>
+          <p>Utilizando os acordes do Campo Harmônico, você pode criar progressões harmônicas que fazem sentido dentro de uma tonalidade, gerando músicas harmoniosas e coesas.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Qual a diferença entre acordes maiores e menores?</h3>
+          <p>Acordes maiores são geralmente associados a sonoridades mais alegres e brilhantes, enquanto acordes menores tendem a evocar emoções mais melancólicas ou introspectivas.</p>
+        </div>
+      </section>
+      
+      <!-- Seção de Músicas por Categoria -->
+      <section id="musicas-categorias">
+        <h2>Músicas por Categoria</h2>
+  
+        <div class="categorias-container">
+          <aside class="categorias">
+            <h3>Seleção de Categorias</h3>
+            <ul>
+              <li><button onclick="openCategoryModal('Natal')">Natal</button></li>
+              <li><button onclick="openCategoryModal('Quaresma')">Quaresma</button></li>
+              <li><button onclick="openCategoryModal('Páscoa')">Páscoa</button></li>
+              <li><button onclick="openCategoryModal('Tempo Comum')">Tempo Comum</button></li>
+              <li><button onclick="openCategoryModal('Marianas')">Marianas</button></li>
+              <li><button onclick="openCategoryModal('Adoração')">Adoração</button></li>
+              <li><button onclick="openCategoryModal('Conhecidas')">Conhecidas</button></li>
+              <li><button onclick="openCategoryModal('Grupo De Oração')">Grupo De Oração</button></li>
+              <li><button onclick="openCategoryModal('Que Nos Marcaram')">Que Nos Marcaram</button></li>
+              <li><button onclick="openCategoryModal('Infantis')">Infantis</button></li>
+              <li><button onclick="openCategoryModal('Extras')">Extras</button></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
+      <!-- Modal para Exibir Músicas -->
+      <div div id="category-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Músicas da Categoria: <span id="modal-categoria"></span></h2>
+          <div id="search-results">
+            <!-- As músicas carregadas aparecerão aqui -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal para Resultados da Pesquisa -->
+      <div id="results-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div id="results"></div>
+        </div>
+      </div>
     </article>
   </main>
 
@@ -143,5 +191,6 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/musicSearch.js"></script>
 </body>
 </html>
