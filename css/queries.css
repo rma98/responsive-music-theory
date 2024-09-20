@@ -1,5 +1,5 @@
 /* Estilos para dispositivos móveis com resolução máxima de 430px */
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   
     /* Ajustes no corpo da página */
     body {
@@ -40,6 +40,30 @@
       height: auto; /* A altura é ajustada automaticamente */
       margin-bottom: 20px; /* Espaçamento abaixo da sidebar */
       padding: 10px; /* Reduz o padding para telas menores */
+    }
+
+    .search-container {
+      width: 100%; /* Largura total */
+      gap: 20px;
+    }
+
+    .search-container input,
+    .search-container button {
+      width: 80%; /* Largura total em dispositivos pequenos */
+      font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .modal-content {
+      width: 95%; /* Largura maior para telas pequenas */
+      padding: 15px; /* Reduzir o padding em telas menores */
+    }
+  
+    .modal-content pre {
+      font-size: 14px; /* Ajustar o tamanho da fonte se necessário */
+    }
+
+    .close {
+      font-size: 24px; /* Tamanho reduzido para o botão de fechar */
     }
   
     /* Ajustes no conteúdo principal */

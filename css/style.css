@@ -66,6 +66,135 @@ header {
   display: inline; /* Exiba o ícone da lua no modo escuro */
 }
 
+/* Estilos da barra de pesquisa */
+.search-container {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin: 20px 0;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em dispositivos menores */
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Faz o input ocupar 100% do espaço disponível */
+  max-width: 300px; /* Define uma largura máxima */
+  font-size: 16px;
+  transition: border-color 0.3s;
+  margin-right: 10px; /* Espaço à direita do input */
+}
+
+.search-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Cor do botão */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilo para o botão em hover */
+.search-container button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para o modo escuro */
+body.dark-mode .search-container input {
+  background-color: #333; /* Fundo escuro */
+  color: white; /* Texto claro */
+  border: 1px solid #555; /* Borda mais clara */
+}
+
+body.dark-mode .search-container button {
+  background-color: #555; /* Fundo escuro para o botão */
+}
+
+body.dark-mode .search-container button:hover {
+  background-color: #444; /* Cor do botão ao passar o mouse no modo escuro */
+}
+
+/* Estilos gerais do modal */
+.modal {
+  display: none; /* Oculta o modal por padrão */
+  position: fixed; /* Fixa o modal na tela */
+  z-index: 1000; /* Coloca o modal acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  overflow: auto; /* Permite rolagem se necessário */
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+}
+
+/* Estilos para o conteúdo do modal */
+.modal-content {
+  background-color: #fff; /* Cor de fundo padrão */
+  color: #333; /* Cor do texto */
+  border: 1px solid #888; /* Borda do modal */
+  border-radius: 10px;
+  padding: 20px; /* Espaçamento interno */
+  width: 90%; /* Largura do modal, maior em telas pequenas */
+  max-width: 500px; /* Largura máxima */
+  margin: auto; /* Centraliza o modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Rolagem vertical se o conteúdo exceder a altura */
+  max-height: 80vh; /* Altura máxima do modal */
+}
+
+.modal-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  margin: 5px 0;
+}
+
+/* Estilos para o conteúdo da música */
+.modal-content pre {
+  font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
+  white-space: pre-wrap; /* Mantém quebras de linha e espaços */
+  word-wrap: break-word; /* Para quebrar palavras longas, se necessário */
+  background-color: #f8f8f8; /* Fundo para o conteúdo */
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto; /* Para rolagem horizontal se necessário */
+  display: block; /* Garante que cada linha se mantenha em bloco */
+}
+
+.modal-content .close {
+  cursor: pointer; /* Altera o cursor para ponteiro */
+}
+
+/* Estilos para o modo escuro */
+.dark-mode .modal-content {
+  background-color: #333; /* Cor de fundo do modal em modo escuro */
+  color: #fff; /* Cor do texto em modo escuro */
+  border: 1px solid #555; /* Borda do modal em modo escuro */
+}
+
+.dark-mode .modal-content h3 {
+  color: #fff; /* Cor do título em modo escuro */
+}
+
+.dark-mode .modal-content p {
+  color: #ccc; /* Cor do texto em modo escuro */
+}
+
+/* Para o conteúdo <pre> no modo escuro */
+.dark-mode .modal-content pre {
+  background-color: #444; /* Fundo do conteúdo <pre> em modo escuro */
+  color: #fff; /* Cor do texto do conteúdo <pre> em modo escuro */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  overflow-x: auto; /* Habilita rolagem horizontal se necessário */
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -397,4 +526,80 @@ footer {
 
 .dark-mode .escala ul {
   color: #e0e0e0;
+}
+
+#musicas-categorias {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.categorias-container {
+  display: flex;
+  width: 100%;
+}
+
+.categorias {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.categorias ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categorias li {
+  margin-bottom: 10px;
+}
+
+.categorias button {
+  padding: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categorias button:hover {
+  background-color: #e0e0e0;
+}
+
+.musicas {
+  flex: 2;
+}
+
+#search-results {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Estilização da Tabela */
+table {
+  width: 100%; /* Largura total da tabela */
+  border-collapse: collapse; /* Remove espaços entre bordas */
+  margin: 20px 0; /* Margem superior e inferior */
+  background-color: #fff; /* Fundo branco */
+  border-radius: 8px; /* Bordas arredondadas */
+  overflow: hidden; /* Esconde bordas que saem */
+}
+
+th, td {
+  padding: 12px; /* Espaçamento interno das células */
+  text-align: left; /* Alinhamento à esquerda */
+  border-bottom: 1px solid #ddd; /* Linha inferior das células */
+}
+
+th {
+  background-color: #f2f2f2; /* Fundo para cabeçalho */
+  font-weight: bold; /* Negrito */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
 }
