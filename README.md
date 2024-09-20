@@ -33,14 +33,6 @@ Este projeto é uma aplicação web interativa para estudar teoria musical, incl
 
 3. Abra o arquivo index.html em seu navegador para explorar a aplicação.
 
-## Estrutura do Projeto 📂
-
-├── index.html         # Página principal da aplicação
-├── css/
-│   └── style.css     # Arquivo de estilo principal
-├── js/
-│   └── script.js      # Lógica da aplicação em JavaScript
-
 ## Contribuindo 🤝
 
 Se você deseja contribuir com este projeto, siga estas etapas:
