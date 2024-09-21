@@ -4,9 +4,10 @@ Este projeto é uma aplicação web interativa para estudar teoria musical, incl
 
 ## Funcionalidades ✨
 
-- 🎹 **Visualização de Acordes**: Exibe acordes com diagramas interativos.
 - 🎼 **Escalas Musicais**: Exibe diferentes tipos de escalas musicais com facilidade.
 - 🎶 **Campo Harmônico**: Mostra os campos harmônicos e as progressões associadas.
+- 🔍 **Barra de Pesquisa**: Permite buscar músicas por título, com resultados exibidos em um modal.
+- 📂 **Seleção por Categoria**: Filtra músicas por categoria, exibindo-as em um modal específico.
 - 💻 **Responsivo**: Interface adaptada para dispositivos móveis e desktops.
 - 🌙 **Modo Escuro**: Alterna entre modo claro e escuro para uma experiência confortável.
 
