@@ -603,3 +603,77 @@ th {
 tr:hover {
   background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
 }
+
+/* Estilos para a seção de progressões populares */
+#progressões-populares {
+  background-color: #f9f9f9; /* Cor de fundo clara */
+  padding: 40px 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leve sombra para destacar */
+}
+
+#progressões-populares h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333; /* Cor do título principal */
+}
+
+.progressao-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.progressao-exemplo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra nas caixas individuais */
+  width: 100%;
+  max-width: 320px;
+}
+
+.progressao-exemplo h3 {
+  font-size: 1.5rem;
+  color: #2c3e50; /* Cor do subtítulo */
+  margin-bottom: 15px;
+}
+
+.progressao-exemplo p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.progressao-exemplo p strong {
+  color: #2980b9; /* Destaque para as tonalidades */
+}
+
+/* Estilos para .dark-mode */
+.dark-mode #progressões-populares {
+  background-color: #2b2b2b; /* Fundo escuro */
+  box-shadow: none; /* Remover sombra para modo escuro */
+}
+
+.dark-mode #progressões-populares h2 {
+  color: #f1f1f1; /* Título claro */
+}
+
+.dark-mode .progressao-exemplo {
+  background-color: #3a3a3a; /* Cor de fundo para os blocos */
+  box-shadow: none; /* Remover sombra */
+}
+
+.dark-mode .progressao-exemplo h3 {
+  color: #f1f1f1; /* Título das progressões claro */
+}
+
+.dark-mode .progressao-exemplo p {
+  color: #d1d1d1; /* Texto dos parágrafos claro */
+}
+
+.dark-mode .progressao-exemplo p strong {
+  color: #81c4ff; /* Destaque para as tonalidades em modo escuro */
+}
