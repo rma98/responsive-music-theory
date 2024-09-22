@@ -287,6 +287,16 @@ footer {
   border-top: 1px solid #ddd;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
+
 /* Estilos para modo escuro */
 .dark-mode {
   background-color: #121212;
@@ -676,4 +686,199 @@ tr:hover {
 
 .dark-mode .progressao-exemplo p strong {
   color: #81c4ff; /* Destaque para as tonalidades em modo escuro */
+}
+
+#ritmos-populares {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.ritmo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ritmo-exemplo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.ritmo-exemplo h3 {
+  color: #333;
+}
+
+.ritmo-exemplo p {
+  color: #555;
+}
+
+.dark-mode #ritmos-populares {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode .ritmo-exemplo {
+  background-color: #444;
+  border: 1px solid #666;
+}
+
+.dark-mode .ritmo-exemplo h3 {
+  color: #fff;
+}
+
+.dark-mode .ritmo-exemplo p {
+  color: #ddd;
+}
+
+#exemplos-batidas {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.batida-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.batida-exemplo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.batida-exemplo h3 {
+  color: #333;
+}
+
+.batida-exemplo p {
+  color: #555;
+}
+
+.dark-mode #exemplos-batidas {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode .batida-exemplo {
+  background-color: #444;
+  border: 1px solid #666;
+}
+
+.dark-mode .batida-exemplo h3 {
+  color: #fff;
+}
+
+.dark-mode .batida-exemplo p {
+  color: #ddd;
+}
+
+#exemplos-praticos-batidas {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.pratica-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pratica-exemplo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.pratica-exemplo h3 {
+  color: #333;
+}
+
+.pratica-exemplo p {
+  color: #555;
+}
+
+#exemplos-praticos-batidas {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.pratica-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pratica-exemplo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.pratica-exemplo h3 {
+  color: #333;
+}
+
+.pratica-exemplo p {
+  color: #555;
+}
+
+.batida-grafico {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#sobre-mim {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Cor de fundo para modo claro */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o texto */
+}
+
+.sobre-mim-container {
+  display: flex;
+  flex-direction: column; /* Organiza em coluna */
+  align-items: center; /* Centraliza os itens */
+  gap: 20px;
+}
+
+.foto-sobre-mim {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.texto-sobre-mim {
+  max-width: 600px; /* Limita a largura do texto para melhor leitura */
+}
+
+/* Estilização para o modo escuro */
+.dark-mode #sobre-mim {
+  background-color: #2c2c2c; /* Cor de fundo para modo escuro */
+  color: #f9f9f9; /* Cor do texto */
+}
+
+.dark-mode .foto-sobre-mim {
+  border: 2px solid #444; /* Ajusta a borda para modo escuro */
+}
+
+.dark-mode .texto-sobre-mim {
+  color: #f9f9f9; /* Cor do texto para modo escuro */
 }
