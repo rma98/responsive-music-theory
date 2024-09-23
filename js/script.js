@@ -41,10 +41,13 @@ function carregarCampoHarmonicoNormal(acordes, classificacoes) {
 
   acordes.forEach((acorde, index) => {
     if (index === 6) {
+      // Acorde diminuto (7º acorde)
       acordeDiminuto += `<li>${acorde} - ${classificacoes[index]}</li>`;
-    } else if (index % 2 === 0) {
+    } else if (index === 0 || index === 3 || index === 4) {
+      // Acordes Maiores (1º, 4º e 5º)
       acordesMaiores += `<li>${acorde} - ${classificacoes[index]}</li>`;
     } else {
+      // Acordes Menores (2º, 3º e 6º)
       acordesMenores += `<li>${acorde} - ${classificacoes[index]}</li>`;
     }
   });
