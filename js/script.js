@@ -24,7 +24,7 @@ function carregarCampoHarmonico(tonalidade) {
     "Subdominante", 
     "Dominante", 
     "Tônica menor relativa", 
-    "Subtônica diminuta"
+    "Sensível"
   ];
 
   if (toggleViewCheckbox.checked) {
@@ -81,11 +81,11 @@ function carregarEscala(escala) {
         <p>A escala maior é composta pelos acordes: I, ii, iii, IV, V, vi, vii°.</p>
         <ul>
           <li>I - Tônica</li>
-          <li>ii - Supertônica</li>
+          <li>ii - Subdominante menor</li>
           <li>iii - Mediante</li>
           <li>IV - Subdominante</li>
           <li>V - Dominante</li>
-          <li>vi - Submediante</li>
+          <li>vi - Tônica menor relativa</li>
           <li>vii° - Sensível</li>
         </ul>
       </div>
