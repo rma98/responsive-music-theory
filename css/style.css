@@ -688,6 +688,8 @@ tr:hover {
   color: #81c4ff; /* Destaque para as tonalidades em modo escuro */
 }
 
+/* Estilos para a Seção de ritmos mais populares */
+
 #ritmos-populares {
   margin: 20px 0;
   padding: 15px;
@@ -716,6 +718,8 @@ tr:hover {
   color: #555;
 }
 
+/* Estilos para .dark-mode */
+
 .dark-mode #ritmos-populares {
   background-color: #333;
   color: #f9f9f9;
@@ -733,6 +737,8 @@ tr:hover {
 .dark-mode .ritmo-exemplo p {
   color: #ddd;
 }
+
+/* Estilos para a seção de exemplos de batidas */
 
 #exemplos-batidas {
   margin: 20px 0;
@@ -760,24 +766,6 @@ tr:hover {
 
 .batida-exemplo p {
   color: #555;
-}
-
-.dark-mode #exemplos-batidas {
-  background-color: #333;
-  color: #f9f9f9;
-}
-
-.dark-mode .batida-exemplo {
-  background-color: #444;
-  border: 1px solid #666;
-}
-
-.dark-mode .batida-exemplo h3 {
-  color: #fff;
-}
-
-.dark-mode .batida-exemplo p {
-  color: #ddd;
 }
 
 #exemplos-praticos-batidas {
@@ -841,6 +829,122 @@ tr:hover {
   text-align: center;
   margin: 10px 0;
 }
+
+/*  Estilos para .dark-mode */
+
+.dark-mode #exemplos-batidas {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode .batida-exemplo {
+  background-color: #444;
+  border: 1px solid #666;
+}
+
+.dark-mode .batida-exemplo h3 {
+  color: #fff;
+}
+
+.dark-mode .batida-exemplo p {
+  color: #ddd;
+}
+
+/* Estilos para a seção de ritmos para violão */
+
+#ritmos-violao {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.rhythm-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.nav-button:hover:enabled {
+  background-color: #0056b3;
+}
+
+/* Estilos para .dark-mode */
+
+.dark-mode #ritmos-violao {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode .rhythm-container {
+  background-color: #444;
+  border: 1px solid #666;
+}
+
+.dark-mode .rhythm-container h3 {
+  margin-left: 10px;
+}
+
+.dark-mode .card-container {
+  color: #ddd;
+}
+
+.dark-mode .card {
+  background-color: #333;
+}
+
+.dark-mode .navigation-buttons {
+  margin-bottom: 10px;
+}
+
+/* Estilos para a seção sobre mim*/
 
 #sobre-mim {
   padding: 2rem;
