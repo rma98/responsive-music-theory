@@ -1,0 +1,177 @@
+[
+    {
+        "nome": "Marcha",
+        "descricao": "Ritmo forte e cadenciado, ideal para celebrações.",
+        "visualizacao": "↓ ↓ ↑ ↓ ↑",
+        "exemplo": "Marcha Soldado - Tradicional",
+        "observacao": "Toque firme nos tempos."
+    },
+    {
+        "nome": "Valsa",
+        "descricao": "Ritmo suave e romântico, caracterizado por três tempos.",
+        "visualizacao": "↓ ↓ ↑",
+        "exemplo": "Sobre o Amor - Vinicius de Moraes",
+        "observacao": "Ênfase no primeiro tempo."
+    },
+    {
+        "nome": "Guarânia",
+        "descricao": "Ritmo suave e melódico, típico da música folclórica.",
+        "visualizacao": "↓ ↓ ↑ ↓ ↑",
+        "exemplo": "Saudade da Minha Terra - Sérgio Reis",
+        "observacao": "Mistura de leveza e emoção."
+    },
+    {
+        "nome": "Balada",
+        "descricao": "Ritmo lento e emocional, muitas vezes usado em canções românticas.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Eu Sei Que Vou Te Amar - Tom Jobim",
+        "observacao": "Ideal para expressar sentimentos."
+    },
+    {
+        "nome": "Quadrilha",
+        "descricao": "Ritmo alegre e dançante, comum em festas juninas.",
+        "visualizacao": "↓ ↓ ↑ ↑",
+        "exemplo": "Olha Pro Céu - Luiz Gonzaga",
+        "observacao": "Perfeito para animar o público."
+    },
+    {
+        "nome": "Marcha Rancho",
+        "descricao": "Ritmo típico de folguedos e festividades.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Asa Branca - Luiz Gonzaga",
+        "observacao": "Traz um clima de celebração."
+    },
+    {
+        "nome": "Country",
+        "descricao": "Ritmo com influência do folk e da música americana.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Take Me Home, Country Roads - John Denver",
+        "observacao": "Fácil de tocar e dançar."
+    },
+    {
+        "nome": "Fox",
+        "descricao": "Ritmo de dança, caracterizado por uma batida suave e regular.",
+        "visualizacao": "↓ ↓ ↑ ↑",
+        "exemplo": "Blue Moon - Billie Holiday",
+        "observacao": "Ideal para dançar a dois."
+    },
+    {
+        "nome": "Canção",
+        "descricao": "Ritmo tranquilo e melódico, muito utilizado em canções populares.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Cazuza - Exagerado",
+        "observacao": "Para tocar e relaxar."
+    },
+    {
+        "nome": "Xote",
+        "descricao": "Ritmo nordestino, dançante e envolvente.",
+        "visualizacao": "↓ ↓ ↑",
+        "exemplo": "Asa Branca - Luiz Gonzaga",
+        "observacao": "Estimula a dança."
+    },
+    {
+        "nome": "Bolero",
+        "descricao": "Ritmo suave, ideal para danças lentas e românticas.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Besame Mucho - Consuelo Velázquez",
+        "observacao": "Perfeito para momentos íntimos."
+    },
+    {
+        "nome": "Funk Charme",
+        "descricao": "Ritmo descontraído e dançante, típico das festas.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Rap da Felicidade - Cidinho e Doca",
+        "observacao": "Música de festa e alegria."
+    },
+    {
+        "nome": "Cururú",
+        "descricao": "Ritmo tradicional, comum em festas e celebrações.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Cururú - Folclore Brasileiro",
+        "observacao": "Ritmo festivo e contagiante."
+    },
+    {
+        "nome": "Baião",
+        "descricao": "Ritmo nordestino, animado e dançante.",
+        "visualizacao": "↓ ↓ ↑ ↑",
+        "exemplo": "Asa Branca - Luiz Gonzaga",
+        "observacao": "Ideal para festas e danças."
+    },
+    {
+        "nome": "Sambaião",
+        "descricao": "Ritmo que mistura samba com outros estilos.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "O Caderno - Toquinho",
+        "observacao": "Perfeito para a celebração cultural."
+    },
+    {
+        "nome": "Reggae Tradicional",
+        "descricao": "Ritmo calmo e relaxante, originado na Jamaica.",
+        "visualizacao": "↓ ↓ ↑ ↑",
+        "exemplo": "No Woman, No Cry - Bob Marley",
+        "observacao": "Ideal para relaxar."
+    },
+    {
+        "nome": "Reggae Balada",
+        "descricao": "Uma versão mais suave do reggae, com foco em canções românticas.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Is This Love - Bob Marley",
+        "observacao": "Ótimo para momentos especiais."
+    },
+    {
+        "nome": "Reggae Dance",
+        "descricao": "Ritmo animado e dançante, típico de festas.",
+        "visualizacao": "↓ ↓ ↑ ↑",
+        "exemplo": "Sweat (A La La La La Long) - Inner Circle",
+        "observacao": "Perfeito para agitar o público."
+    },
+    {
+        "nome": "Reggae Rock Blues",
+        "descricao": "Mistura de reggae com rock e blues.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Redemption Song - Bob Marley",
+        "observacao": "Para refletir e relaxar."
+    },
+    {
+        "nome": "Pop Balada",
+        "descricao": "Ritmo pop mais lento, perfeito para canções românticas.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Someone Like You - Adele",
+        "observacao": "Ótimo para tocar com emoção."
+    },
+    {
+        "nome": "Rock",
+        "descricao": "Ritmo forte e energético, ideal para animar a plateia.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Smoke on the Water - Deep Purple",
+        "observacao": "Perfeito para shows."
+    },
+    {
+        "nome": "Folk",
+        "descricao": "Ritmo acústico e melódico, ligado à música tradicional.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "The Boxer - Simon & Garfunkel",
+        "observacao": "Ótimo para tocar com voz."
+    },
+    {
+        "nome": "Pop Rock",
+        "descricao": "Mistura de pop com rock, muito popular.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Livin' on a Prayer - Bon Jovi",
+        "observacao": "Para animar festas."
+    },
+    {
+        "nome": "Rock Balada",
+        "descricao": "Uma versão mais lenta do rock, focando em letras emocionais.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "I Don't Want to Miss a Thing - Aerosmith",
+        "observacao": "Ideal para momentos românticos."
+    },
+    {
+        "nome": "Pop Funk Swing",
+        "descricao": "Mistura de pop, funk e swing, com uma batida dançante.",
+        "visualizacao": "↓ ↑ ↓ ↑",
+        "exemplo": "Uptown Funk - Mark Ronson feat. Bruno Mars",
+        "observacao": "Para levantar o astral da festa."
+    }
+]
