@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB - Músicas</title>
+    <link rel="stylesheet" href="css/tab.css">
+</head>
+<body>
+
+    <h2>TAB de Músicas</h2>
+    
+    <!-- Seletor de músicas -->
+    <div class="song-selector">
+        <label for="song">Escolha a música: </label>
+        <select id="song"></select>
+    </div>
+
+    <!-- Exibir qual parte o usuário está -->
+    <div class="current-part" id="current-part">Parte 1</div>
+
+    <!-- Container da TAB -->
+    <div class="tab-container" id="tab-container"></div>
+
+    <!-- Botões de navegação -->
+    <div class="buttons">
+        <button id="prev-btn">Voltar</button>
+        <button id="next-btn">Avançar</button>
+    </div>
+
+    <script src="js/tab.js"></script>
+</body>
+</html>
